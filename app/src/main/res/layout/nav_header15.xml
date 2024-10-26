@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/drawer_vibrant_gradient">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_Image15"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_marginTop="4dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile"
+        app:civ_border_color="@color/black"
+        app:civ_border_width="4dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/profileName15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="YASIN ARAFAT"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/profile_Image15"
+        app:layout_constraintStart_toStartOf="@+id/profile_Image15"
+        app:layout_constraintTop_toBottomOf="@+id/profile_Image15" />
+
+    <TextView
+        android:id="@+id/profileEmail15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="arafat1122@example.com"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="@+id/profileName15"
+        app:layout_constraintStart_toStartOf="@+id/profileName15"
+        app:layout_constraintTop_toBottomOf="@+id/profileName15" />
+
+    <TextView
+        android:id="@+id/location15"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Dhaka, Bangladesh"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/profileEmail15"
+        app:layout_constraintStart_toStartOf="@+id/profileEmail15"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/profileEmail15" />
+</androidx.constraintlayout.widget.ConstraintLayout>

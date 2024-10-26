@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/friendsFragment3">
+    <fragment
+        android:id="@+id/friendsFragment3"
+        android:name="com.example.locationsharingapp_dipti_15.FriendsFragment"
+        android:label="fragment_friends2"
+        tools:layout="@layout/fragment_friends15" />
+    <fragment
+        android:id="@+id/profileFragment2"
+        android:name="com.example.locationsharingapp_dipti_15.ProfileFragment15"
+        android:label="fragment_profile2"
+        tools:layout="@layout/fragment_profile15" />
+</navigation>

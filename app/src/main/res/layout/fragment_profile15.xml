@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/profile_gradient_background"
+    android:padding="24dp"
+    tools:context=".ProfileFragment15">
+
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/titleTv15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Profile Information"
+        android:textColor="#2196F3"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="16dp"/>
+
+    <!-- Email Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout015"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Email Address"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titleTv15"
+        app:boxStrokeColor="#2196F3"
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/input_background"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Name Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Full Name"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout015"
+        app:boxStrokeColor="#2196F3"
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/nameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/input_background"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Location Input Field -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout215"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Location"
+        app:endIconMode="clear_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout15"
+        app:boxStrokeColor="#2196F3"
+        android:padding="12dp">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/locationEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:enabled="false"
+            android:textColor="#212121"
+            android:textSize="16sp"
+            android:padding="12dp"
+            android:background="@drawable/input_background"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Update Button -->
+
+    <!-- Home Button -->
+
+    <!-- Logout Button -->
+
+    <!-- Description TextView -->
+
+
+    <Button
+        android:id="@+id/updateBtn15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:backgroundTint="#2196F3"
+        android:padding="16dp"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:cornerRadius="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textInputLayout215" />
+
+    <ImageButton
+        android:id="@+id/homeBtn15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/profile_button_bg"
+        android:scaleType="fitCenter"
+        android:src="@drawable/home"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTv15" />
+
+    <ImageButton
+        android:id="@+id/logoutBtn15"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        android:background="@drawable/profile_button_bg"
+        android:scaleType="fitCenter"
+        android:src="@drawable/logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/homeBtn15" />
+
+    <TextView
+        android:id="@+id/descriptionTv15"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Please fill out your profile information."
+        android:textColor="#757575"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/updateBtn15" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
